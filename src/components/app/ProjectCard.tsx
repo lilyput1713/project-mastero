@@ -36,17 +36,17 @@ export function ProjectCard({ project, onDelete }: ProjectCardProps) {
         <CardDescription className="mt-2 text-base flex-1">
           {project.description}
         </CardDescription>
-        <p className="text-2xl font-bold text-primary mt-4">
-          ${project.price.toFixed(2)}
-        </p>
-      </CardContent>
-      <CardFooter className="grid grid-cols-3 gap-2">
-        <Button asChild variant="outline">
-          <Link href={project.demoLink} target="_blank">
-            <ExternalLink />
+        <div className="flex justify-between items-center mt-4">
+          <p className="text-2xl font-bold text-primary">
+            ${project.price.toFixed(2)}
+          </p>
+          <Link href={project.demoLink} target="_blank" className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
+            <ExternalLink className="h-4 w-4" />
             Demo
           </Link>
-        </Button>
+        </div>
+      </CardContent>
+      <CardFooter className="grid grid-cols-2 gap-2">
         <Button asChild>
           <Link href={`/edit/${project.id}`}>
             <Edit />
