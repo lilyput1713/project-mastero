@@ -36,11 +36,15 @@ export function ProjectCard({ project, onDelete }: ProjectCardProps) {
         <CardDescription className="mt-2 text-base flex-1">
           {project.description}
         </CardDescription>
-        <div className="flex justify-between items-center mt-4">
+        <div className="mt-4">
           <p className="text-2xl font-bold text-primary">
             ${project.price.toFixed(2)}
           </p>
-          <p className="text-sm font-medium text-muted-foreground">{project.demoLink}</p>
+        </div>
+        <div className="mt-2">
+          <p className="text-sm font-medium text-muted-foreground">
+            {project.demoLink}
+          </p>
         </div>
       </CardContent>
       <CardFooter className="grid grid-cols-2 gap-2">
