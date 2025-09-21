@@ -40,10 +40,7 @@ export function ProjectCard({ project, onDelete }: ProjectCardProps) {
           <p className="text-2xl font-bold text-primary">
             ${project.price.toFixed(2)}
           </p>
-          <Link href={project.demoLink} target="_blank" className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
-            <ExternalLink className="h-4 w-4" />
-            Demo
-          </Link>
+          <p className="text-sm font-medium text-muted-foreground">{project.demoLink}</p>
         </div>
       </CardContent>
       <CardFooter className="grid grid-cols-2 gap-2">
