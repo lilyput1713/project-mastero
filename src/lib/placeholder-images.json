@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "proj1",
+      "description": "A vibrant abstract painting",
+      "imageUrl": "https://picsum.photos/seed/1/600/400",
+      "imageHint": "abstract painting"
+    },
+    {
+      "id": "proj2",
+      "description": "Modern architecture with clean lines",
+      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "proj3",
+      "description": "A serene nature landscape",
+      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageHint": "nature landscape"
+    }
+  ]
 }
